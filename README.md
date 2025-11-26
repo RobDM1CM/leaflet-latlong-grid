@@ -7,7 +7,8 @@ Designed for general Leaflet map applications.
 
 ## Features
 
-- Draws Latitude and Longitude grid lines and labels at different levels of detail depending on zoom:
+- Draws Latitude and Longitude grid lines and labels at different levels of detail depending on zoom
+- Also draws Tropic of Cancer / Tropic of Capricorn lines, and Arctic and Antarctic Circle lines 
 - Smooth “parachute redraw” logic to avoid flicker and double-rendering
 - Works across the antemeridian / date line (_at least as well as Leaflet can manage!_)
 - Pure Leaflet, no external libraries
