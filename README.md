@@ -30,8 +30,8 @@ var gridOptions = { color: "#00a",
                     opacity: 0.4
                   };
 var map = L.map('map', { });
-const locGrid = new LocatorGrid(gridOptions);
-locGrid.addTo(map);
+const llGrid = new LatLongGrid(gridOptions);
+llGrid.addTo(map);
 ```
 
 Add the grid as an overlay in ```L.control.layers```:
@@ -40,7 +40,7 @@ var map = L.map('map', { });
 var gridOptions = { color: "#00a",
                     opacity: 0.4
                   };
-const locGrid = new LocatorGrid(gridOptions);
+const llGrid = new LatLongGrid(gridOptions);
 ...
 ...
 var baseMaps = {
@@ -49,7 +49,7 @@ var baseMaps = {
 };
 
 var overlays = {
-    "Locator Grid": locGrid
+    "Lat/Long Grid": llGrid
 };
 
 var layerControl = L.control.layers(baseMaps, overlays).addTo(map);
@@ -57,11 +57,11 @@ var layerControl = L.control.layers(baseMaps, overlays).addTo(map);
 
 ## API
 
-```LocatorGrid.addTo(map)```
+```LatLongGrid.addTo(map)```
 
 Adds the grid to the map and starts automatic redraw handling.
 
-```LocatorGrid.remove()```
+```LatLongGrid.remove()```
 
 Removes all grid elements and event listeners.
 
