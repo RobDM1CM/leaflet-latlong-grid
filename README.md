@@ -18,8 +18,8 @@ Designed for general Leaflet map applications.
 <link rel="stylesheet" href="leaflet.css">
 <script src="leaflet.js"></script>
 
-<script src="locator-grid-leaflet.js"></script>
-<link rel="stylesheet" href="locator-grid-leaflet.css">
+<script src="latlong_grid_leaflet.js"></script>
+<link rel="stylesheet" href="latlong_grid_leaflet.css">
 ```
 
 ## Usage
